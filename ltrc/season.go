@@ -1,4 +1,4 @@
-package main
+package ltrc
 
 type Season struct {
 	Name         string

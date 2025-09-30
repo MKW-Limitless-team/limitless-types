@@ -1,4 +1,4 @@
-package main
+package ltrc
 
 type Participant struct {
 	Name string

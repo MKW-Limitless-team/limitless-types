@@ -1,4 +1,4 @@
-package main
+package ltrc
 
 type Event struct {
 	ID     int

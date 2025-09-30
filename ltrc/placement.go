@@ -1,4 +1,4 @@
-package main
+package ltrc
 
 import (
 	"sort"
