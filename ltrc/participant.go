@@ -1,6 +1,6 @@
 package ltrc
 
 type Participant struct {
-	Name string
-	Mmr  int64
+	Name string `json:"name,omitempty"`
+	Mmr  int64  `json:"mmr,omitempty"`
 }

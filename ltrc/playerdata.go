@@ -6,12 +6,12 @@ import (
 )
 
 type PlayerData struct {
-	Name       string
-	FriendCode string
-	DiscordID  string
-	Mmr        int64
-	Mii        string
-	Flag       string
+	Name       string `json:"name,omitempty"`
+	FriendCode string `json:"friend_code,omitempty"`
+	DiscordID  string `json:",omitempty"`
+	Mmr        int64  `json:",omitempty"`
+	Mii        string `json:",omitempty"`
+	Flag       string `json:",omitempty"`
 }
 
 func (playerData *PlayerData) ShowMii() string {

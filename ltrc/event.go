@@ -1,13 +1,13 @@
 package ltrc
 
 type Event struct {
-	ID     int
-	Format Format
+	ID     int    `json:"id,omitempty"`
+	Format Format `json:"format"`
 }
 
 type Racer struct {
-	Event int
-	Name  string
-	Mmr   float64
-	Score float64
+	Event int     `json:"event,omitempty"`
+	Name  string  `json:"name,omitempty"`
+	Mmr   float64 `json:"mmr,omitempty"`
+	Score float64 `json:"score,omitempty"`
 }

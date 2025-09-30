@@ -5,19 +5,19 @@ import (
 )
 
 type Placement struct {
-	ID           int
-	Track        string
-	DiscordID    string
-	Minutes      int
-	Seconds      int
-	Milliseconds int
-	Character    string
-	Vehicle      string
-	DriftType    string
-	Category     string
-	Url          string
-	CRC          uint32
-	Approved     bool
+	ID           int    `json:"id,omitempty"`
+	Track        string `json:"track,omitempty"`
+	DiscordID    string `json:"discord_id,omitempty"`
+	Minutes      int    `json:"minutes,omitempty"`
+	Seconds      int    `json:"seconds,omitempty"`
+	Milliseconds int    `json:"milliseconds,omitempty"`
+	Character    string `json:"character,omitempty"`
+	Vehicle      string `json:"vehicle,omitempty"`
+	DriftType    string `json:"drift_type,omitempty"`
+	Category     string `json:"category,omitempty"`
+	Url          string `json:"url,omitempty"`
+	CRC          uint32 `json:"crc,omitempty"`
+	Approved     bool   `json:"approved,omitempty"`
 }
 
 type byTime []*Placement

@@ -1,6 +1,6 @@
 package ltrc
 
 type Flag struct {
-	Emoji string
-	Name  string
+	Emoji string `json:"emoji,omitempty"`
+	Name  string `json:"name,omitempty"`
 }
