@@ -38,5 +38,5 @@ func (a byScore) Swap(i, j int) {
 }
 
 func (a byScore) Less(i, j int) bool {
-	return a[i].Total() < a[j].Total()
+	return a[i].Total() > a[j].Total()
 }
