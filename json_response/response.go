@@ -16,6 +16,6 @@ func FailureResponse(data string) *JsonResponse {
 	return &JsonResponse{Status: Failure, Data: data}
 }
 
-func SuccessResponse(data any) *JsonResponse {
+func SuccessResponse(data ...any) *JsonResponse {
 	return &JsonResponse{Status: Failure, Data: data}
 }
