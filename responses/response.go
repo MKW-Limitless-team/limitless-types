@@ -16,6 +16,6 @@ func FailureResponse(message string) *PlayerInfoResponse {
 	return &PlayerInfoResponse{Status: Failure, Message: message}
 }
 
-func SuccessResponse(data PlayerInfoResponse) *PlayerInfoResponse {
-	return &PlayerInfoResponse{Status: Success, PlayerData: data.PlayerData, User: data.User}
+func SuccessResponse() *PlayerInfoResponse {
+	return &PlayerInfoResponse{Status: Success}
 }
