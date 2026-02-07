@@ -16,6 +16,9 @@ type PlayerData struct {
 
 func (playerData *PlayerData) GetFC() string {
 	fc := strconv.Itoa(int(wwfc.PidToFC(playerData.ProfileID)))
+	for len(fc) != 12 {
+		fc = "0" + fc
+	}
 	return fmt.Sprintf("%s-%s-%s", fc[:4], fc[4:8], fc[8:12])
 }
 
