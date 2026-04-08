@@ -9,6 +9,7 @@ import (
 )
 
 type PlayerData struct {
+	Name      string `json:"name,omitempty"`
 	ProfileID uint64 `json:"profileID,omitempty"`
 	DiscordID string `json:"discordID,omitempty"`
 	Mmr       *int64 `json:"mmr,omitempty"`
